@@ -1,38 +1,43 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
+}
+
+h2.dayNumber {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3.dayDescription {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Assignment {
+  background: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 25%;
+  margin: 0px auto 10px auto;
 }

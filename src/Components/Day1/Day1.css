@@ -1,0 +1,91 @@
+.SignUp {
+  background-color: rgb(121, 173, 252);
+}
+
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.SignUpForm > h1 {
+  font-family: sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0px auto 15px auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.SignUpForm > div {
+  display: flex;
+}
+
+.nameInputs {
+  justify-content: space-between;
+}
+
+.SignUpForm > div > input {
+  flex-basis: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.SignUpForm > div > input::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 14px;
+}
+
+#firstName,
+#lastName {
+  flex-basis: 48%;
+}
+
+.termsOfService {
+  justify-content: flex-start;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#termsOfService {
+  flex-basis: 85%;
+  text-align: right;
+  padding-right: 5px;
+  align-self: center;
+}
+
+#terms {
+  flex-basis: 0%;
+  height: auto;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.SignUpForm > div > button {
+  height: 40px;
+  border: 1px solid rgb(175, 175, 175);
+  border-bottom: 3px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin: auto;
+  background-color: rgb(121, 173, 252);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.SignUpForm > div > button:hover {
+  background-color: #333;
+  color: white;
+}
