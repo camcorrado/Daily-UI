@@ -46,10 +46,6 @@ export default class Day1 extends Component {
       this.setState({
         error: `Password must contain 1 upper case, lower case, number and special character.`,
       });
-    } else if (firstName.value.length < 2 || lastName.value.length < 2) {
-      this.setState({
-        error: `First Name and Last Name must be at least two characters each.`,
-      });
     } else {
       this.setState({ success: `Thank you for signing up!` });
       firstName.value = "";
@@ -81,6 +77,7 @@ export default class Day1 extends Component {
               name="firstName"
               id="firstName"
               maxLength="20"
+              minLength="2"
               placeholder="First Name"
               required
             />
@@ -89,6 +86,7 @@ export default class Day1 extends Component {
               name="lastName"
               id="lastName"
               maxLength="20"
+              minLength="2"
               placeholder="Last Name"
               required
             />
