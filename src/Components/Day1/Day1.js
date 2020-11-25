@@ -60,12 +60,12 @@ export default class Day1 extends Component {
   render() {
     const { error, success } = this.state;
     return (
-      <section className="SignUp">
-        <div className="Assignment">
+      <section className="signUp">
+        <div className="assignment">
           <h2 className="dayNumber">Day 1</h2>
           <h3 className="dayDescription">Sign Up Form</h3>
         </div>
-        <form className="SignUpForm" onSubmit={this.handleSubmit}>
+        <form className="signUpForm" onSubmit={this.handleSubmit}>
           <h1>Sign Up</h1>
           <div role="alert" className="alert">
             {error && <p className="error">{error}</p>}
