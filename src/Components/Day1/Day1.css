@@ -49,7 +49,8 @@
 
 #firstName,
 #lastName {
-  flex-basis: 48%;
+  flex-basis: 45%;
+  max-width: 45%;
 }
 
 .termsOfService {
