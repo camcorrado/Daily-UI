@@ -1,0 +1,115 @@
+.landingPage {
+  background-color: rgb(80, 0, 36);
+}
+
+.albumInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.albumArtworkContainer {
+  margin: 20px 20px 0px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+
+.albumArtwork {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.phantomsText {
+  font-size: clamp(12px, 7vw, 80px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.phantomsText > p {
+  filter: drop-shadow(0 0 5px rgb(80, 0, 36));
+  -webkit-text-stroke: 0.5px rgb(80, 0, 36);
+  color: white;
+  text-shadow: 1px 1px 0 rgb(80, 0, 36), -1px -1px 0 rgb(80, 0, 36),
+    1px -1px 0 rgb(80, 0, 36), -1px 1px 0 rgb(80, 0, 36),
+    1px 1px 0 rgb(80, 0, 36);
+}
+
+.phantoms {
+  font-size: clamp(18px, 14vw, 140px);
+  display: block;
+  filter: drop-shadow(0 0 10px rgb(80, 0, 36));
+}
+
+.moonlight {
+  font-size: clamp(22px, 17vw, 160px);
+  display: block;
+  filter: drop-shadow(0 0 10px rgb(80, 0, 36));
+}
+
+.aboutPhantoms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.moonlightSpotify {
+  border-radius: 4px;
+  align-self: center;
+  width: 100%;
+}
+
+.aboutPhantomsText {
+  margin-bottom: 10px;
+}
+
+.aboutPhantomsText > p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .albumInfo {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+
+  .albumArtworkContainer {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .phantomsText {
+    font-size: clamp(12px, 7vw, 30px);
+  }
+
+  .phantoms {
+    font-size: clamp(18px, 14vw, 90px);
+  }
+
+  .moonlight {
+    font-size: clamp(22px, 17vw, 110px);
+  }
+
+  .aboutPhantoms {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
