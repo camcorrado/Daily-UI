@@ -1,5 +1,5 @@
 .checkout {
-  background-color: rgb(95, 235, 95);
+  background-color: darkgreen;
 }
 
 .checkoutTable {
@@ -148,7 +148,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   padding: 10px;
   margin: auto;
-  background-color: rgb(95, 235, 95);
+  background-color: lightgreen;
   cursor: pointer;
   transition: all 0.5s;
 }

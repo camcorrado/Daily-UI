@@ -1,0 +1,90 @@
+.flashMessage {
+  background-color: beige;
+}
+.flashMessageForm {
+  font-size: clamp(20px, 4vw, 40px);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  height: 300px;
+}
+
+.messageAndButtons {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.emoticonMessage {
+  width: 150px;
+  height: 75px;
+  position: relative;
+  background: cornflowerblue;
+  border-radius: 10px;
+}
+
+.emoticonMessage:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 85%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: cornflowerblue;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+.emoticonMessage > p {
+  line-height: 75px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.messageAndButtons > .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-between;
+  height: 50px;
+}
+
+.happyButton {
+  margin-bottom: 10px;
+  font-size: 16px;
+  height: 32px;
+  color: green;
+  background-color: white;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 4px;
+}
+
+.sadButton {
+  font-size: 16px;
+  height: 32px;
+  color: red;
+  background-color: white;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 4px;
+}
+
+.emoticon {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  font-size: 56px;
+}
+
+.emoticonHead,
+.emoticonBody {
+  text-align: center;
+}

@@ -1,5 +1,13 @@
 .signUp {
-  background-color: rgb(121, 173, 252);
+  background: linear-gradient(
+    -45deg,
+    rgb(121, 173, 252),
+    rgb(121, 173, 252),
+    #ff468d,
+    #ff468d
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .signUpForm {
@@ -74,6 +82,16 @@
 }
 
 .signUpForm > div > button {
+  background: linear-gradient(
+    -45deg,
+    rgb(121, 173, 252),
+    rgb(121, 173, 252),
+    #ff468d,
+    #ff468d
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-color: #333;
   height: 40px;
   border: 1px solid rgb(175, 175, 175);
   border-bottom: 3px solid #333;
@@ -81,12 +99,24 @@
   font-size: 16px;
   padding: 10px;
   margin: auto;
-  background-color: rgb(121, 173, 252);
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .signUpForm > div > button:hover {
+  background: none;
   background-color: #333;
   color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

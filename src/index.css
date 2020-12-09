@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
 section {
   border-bottom: 1px solid black;
   width: 100vw;

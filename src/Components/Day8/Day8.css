@@ -1,0 +1,60 @@
+.errorPage {
+  background-image: url("https://imgur.com/ZVB98xG.png"),
+    url("https://imgur.com/bmht48K.png"), url("https://imgur.com/dwVtTdE.png");
+  background-color: rgb(0, 0, 51);
+  background-size: clamp(200px, 27vw, 900px), clamp(200px, 27vw, 900px),
+    100% 100%;
+  background-position: 5% 0%;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.errorPage > .assignment {
+  width: 100%;
+}
+
+.errorPageClouds {
+  background-image: url("https://imgur.com/F1MERIM.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+  animation: 2000s para infinite linear;
+}
+
+.errorPageContents {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.errorPageContents > h1 {
+  font-size: clamp(20px, 8vw, 80px);
+  margin: 0px;
+}
+
+.errorPageContents > h2 {
+  font-size: clamp(18px, 5vw, 60px);
+}
+
+.errorPageContents > p {
+  margin: 10px 0px;
+  font-size: clamp(16px, 2vw, 40px);
+}
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+      400px 0;
+  }
+}

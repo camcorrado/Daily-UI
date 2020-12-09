@@ -2,13 +2,7 @@ import React, { Component } from "react";
 import "./Day4.css";
 
 export default class Day4 extends Component {
-  state = {
-    error: null,
-    success: null,
-  };
-
   render() {
-    const { error, success } = this.state;
     return (
       <section className="calculator">
         <div className="assignment">
