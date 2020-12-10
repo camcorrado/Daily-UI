@@ -1,0 +1,38 @@
+.settings > .assignment {
+  width: 100%;
+}
+
+.settings {
+  background-size: auto 100%, clamp(200px, 27vw, 900px),
+    clamp(200px, 27vw, 900px), auto 100%;
+  background-position: 5% 0%;
+  background-repeat: repeat-x, no-repeat, no-repeat, repeat-x;
+  background-color: rgb(0, 0, 85);
+  height: 500px;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.moodBoard {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  height: 100%;
+}
+
+.moodSettingsForm {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+}
+
+.moodSettingsForm > input,
+.moodSettingsForm > select {
+  margin: 0px 2.5px;
+}
