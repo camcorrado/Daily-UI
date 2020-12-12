@@ -1,0 +1,42 @@
+.countdownTimer {
+  background-color: black;
+  height: 300px;
+}
+
+.game {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.gameRules {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.gameInfo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gameInfo > button {
+  height: 25px;
+  width: 50px;
+}
+
+.gameButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.gameButtons > button {
+  height: 100px;
+  width: 100px;
+}
+
+.correct {
+  background-color: green;
+}

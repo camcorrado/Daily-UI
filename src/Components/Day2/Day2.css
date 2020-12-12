@@ -161,7 +161,6 @@ input::-webkit-inner-spin-button {
 .cart {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   flex-basis: 25%;
   margin-bottom: 10px;
 }
