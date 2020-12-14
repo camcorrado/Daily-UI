@@ -11,6 +11,7 @@ export default class Day14 extends Component {
     started: false,
     seconds: 10,
     message: "",
+    outcomeColor: "gray",
     buttons: [],
     buttonsClicked: {
       1: false,
@@ -20,8 +21,12 @@ export default class Day14 extends Component {
     },
   };
 
-  startGame = () => {
-    this.setState({ message: "" });
+  startGame = async () => {
+    await this.setState({
+      message: "",
+      started: true,
+      outcomeColor: "gray",
+    });
     this.shuffle([
       { buttonNum: 1 },
       { buttonNum: 2 },
@@ -46,7 +51,6 @@ export default class Day14 extends Component {
   };
 
   startTimer = () => {
-    this.setState({ started: true });
     if (this.timer === 0 && this.state.seconds > 0) {
       this.timer = setInterval(this.countDown, 1000);
     }
@@ -73,8 +77,8 @@ export default class Day14 extends Component {
       seconds: seconds,
     });
     if (seconds === 0) {
+      this.setState({ message: `You lose!`, outcomeColor: "crimson" });
       this.stopTimer();
-      this.setState({ message: `You lose!` });
     }
   };
 
@@ -133,20 +137,30 @@ export default class Day14 extends Component {
           ...this.state.buttonsClicked,
           4: true,
         },
+        message: `You're a winner, baby!`,
+        outcomeColor: "goldenrod",
       });
       this.stopTimer();
-      this.setState({ message: `You're a winner, baby!` });
     } else {
       this.setState({ message: `Incorrect!` });
-
       this.resetButtons();
     }
   };
 
   render() {
-    const { started, seconds, message, buttons, buttonsClicked } = this.state;
+    const {
+      started,
+      seconds,
+      message,
+      buttons,
+      buttonsClicked,
+      outcomeColor,
+    } = this.state;
     return (
-      <section className="countdownTimer">
+      <section
+        className="countdownTimer"
+        style={{ backgroundColor: outcomeColor }}
+      >
         <div className="assignment">
           <h2 className="dayNumber">Day 14</h2>
           <h3 className="dayDescription">Countdown Timer</h3>

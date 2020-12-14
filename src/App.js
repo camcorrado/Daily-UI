@@ -14,6 +14,8 @@ import Day11 from "./Components/Day11/Day11";
 import Day12 from "./Components/Day12/Day12";
 import Day13 from "./Components/Day13/Day13";
 import Day14 from "./Components/Day14/Day14";
+import Day15 from "./Components/Day15/Day15";
+import Day16 from "./Components/Day16/Day16";
 
 class App extends Component {
   render() {
@@ -34,6 +36,8 @@ class App extends Component {
         <Day12 />
         <Day13 />
         <Day14 />
+        <Day15 />
+        <Day16 />
       </main>
     );
   }

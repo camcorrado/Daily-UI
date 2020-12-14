@@ -1,6 +1,5 @@
 .countdownTimer {
-  background-color: black;
-  height: 300px;
+  min-height: 420px;
 }
 
 .game {
@@ -9,15 +8,24 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 100%;
 }
 
 .gameRules {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.gameRules > p {
+  margin-bottom: 5px;
 }
 .gameInfo {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.gameInfo > p {
+  font-size: 36px;
 }
 
 .gameInfo > button {
@@ -35,8 +43,26 @@
 .gameButtons > button {
   height: 100px;
   width: 100px;
+  background: linear-gradient(-45deg, black, lightgray, black);
+  animation: gradient 10s ease infinite;
+  background-size: 200%;
+  font-size: 72px;
 }
 
-.correct {
-  background-color: green;
+button.correct {
+  background: linear-gradient(-45deg, green, lightgray, green);
+  animation: gradient 10s ease infinite;
+  background-size: 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
