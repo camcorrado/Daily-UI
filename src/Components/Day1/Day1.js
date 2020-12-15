@@ -79,6 +79,7 @@ export default class Day1 extends Component {
               maxLength="20"
               minLength="2"
               placeholder="First Name"
+              aria-required="true"
               required
             />
             <input
@@ -88,6 +89,7 @@ export default class Day1 extends Component {
               maxLength="20"
               minLength="2"
               placeholder="Last Name"
+              aria-required="true"
               required
             />
           </div>
@@ -98,6 +100,7 @@ export default class Day1 extends Component {
               id="email"
               maxLength="120"
               placeholder="Email"
+              aria-required="true"
               required
             />
           </div>
@@ -108,6 +111,7 @@ export default class Day1 extends Component {
               id="password"
               maxLength="20"
               placeholder="Password"
+              aria-required="true"
               required
             />
           </div>
@@ -118,6 +122,7 @@ export default class Day1 extends Component {
               id="confirmPassword"
               maxLength="20"
               placeholder="Confirm Password"
+              aria-required="true"
               required
             />
           </div>
@@ -125,7 +130,13 @@ export default class Day1 extends Component {
             <label htmlFor="terms of service" id="termsOfService">
               I have read &amp; agree to the terms of service:
             </label>
-            <input type="checkbox" name="terms" id="terms" required />
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              aria-required="true"
+              required
+            />
           </div>
           <div className="buttons">
             <button type="submit" className="primary">

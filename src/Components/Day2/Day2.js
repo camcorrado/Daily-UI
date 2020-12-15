@@ -294,6 +294,7 @@ export default class Day2 extends Component {
                     maxLength="20"
                     minLength="2"
                     placeholder="First Name"
+                    aria-required="true"
                     required
                   />
                   <input
@@ -303,6 +304,7 @@ export default class Day2 extends Component {
                     maxLength="20"
                     minLength="2"
                     placeholder="Last Name"
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -312,6 +314,7 @@ export default class Day2 extends Component {
                     name="streetAddress"
                     id="streetAddress"
                     placeholder="Street Address"
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -321,6 +324,7 @@ export default class Day2 extends Component {
                     name="city"
                     id="city"
                     placeholder="City"
+                    aria-required="true"
                     required
                   />
                   <input
@@ -328,6 +332,7 @@ export default class Day2 extends Component {
                     name="state"
                     id="state"
                     placeholder="State"
+                    aria-required="true"
                     required
                   />
                   <input
@@ -338,6 +343,7 @@ export default class Day2 extends Component {
                     maxLength="5"
                     onChange={this.handleChangeInputZipcode}
                     value={this.state.zipcode}
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -347,6 +353,7 @@ export default class Day2 extends Component {
                     name="email"
                     id="shippingEmail"
                     placeholder="Email"
+                    aria-required="true"
                     required
                   />
                   <input
@@ -357,6 +364,7 @@ export default class Day2 extends Component {
                     maxLength="10"
                     onChange={this.handleChangeInputPhone}
                     value={this.state.phone}
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -371,6 +379,7 @@ export default class Day2 extends Component {
                     maxLength="20"
                     minLength="2"
                     placeholder="First Name"
+                    aria-required="true"
                     required
                   />
                   <input
@@ -380,6 +389,7 @@ export default class Day2 extends Component {
                     maxLength="20"
                     minLength="2"
                     placeholder="Last Name"
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -392,6 +402,7 @@ export default class Day2 extends Component {
                     maxLength="16"
                     onChange={this.handleChangeInputCardNumber}
                     value={this.state.cardNumber}
+                    aria-required="true"
                     required
                   />
                 </div>
@@ -404,6 +415,7 @@ export default class Day2 extends Component {
                     maxLength="3"
                     onChange={this.handleChangeInputCVC}
                     value={this.state.CVC}
+                    aria-required="true"
                     required
                   />
                   <input
@@ -414,6 +426,7 @@ export default class Day2 extends Component {
                     maxLength="2"
                     onChange={this.handleChangeInputExpirationMonth}
                     value={this.state.expirationMonth}
+                    aria-required="true"
                     required
                   />
                   <input
@@ -424,6 +437,7 @@ export default class Day2 extends Component {
                     maxLength="2"
                     onChange={this.handleChangeInputExpirationYear}
                     value={this.state.expirationYear}
+                    aria-required="true"
                     required
                   />
                 </div>
