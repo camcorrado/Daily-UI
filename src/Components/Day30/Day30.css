@@ -20,7 +20,6 @@
 
 .hellMenu {
   font-family: "Raleway";
-  max-width: 1000px;
   margin: 10px 50px 20px 50px;
   padding: 20px;
   border: 1px solid darkred;
@@ -29,48 +28,114 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
-.hellMenuTitle,
 .hellMenuSlogan {
   margin-bottom: 20px;
 }
 
-.hellMenuSlogan > h2 {
-  font-size: 22px;
-}
-
-.hellMenuItems {
-  margin-bottom: 20px;
+.hellMemberships {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.hellMenuItem {
+.hellMembership {
+  border: 1px solid darkred;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.hellMembershipTitle {
   border-image: linear-gradient(
       90deg,
-      rgba(255, 0, 0, 0),
-      rgba(0, 0, 0, 1),
-      rgba(255, 0, 0, 0)
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 20px;
+}
+
+.hellMembershipPrice {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-image: linear-gradient(
+      90deg,
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
     )
     0 0 1 0;
   border-style: solid;
   border-width: 1px;
-  margin-bottom: 10px;
-}
-
-.hellMenuItemName {
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-.hellMenuItemDescription,
-.hellMenuItemPrice {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .soul {
   color: darkred;
+  font-size: 32px;
   margin: 0px 2.5px;
+  margin-bottom: 10px;
+}
+
+.hellMembershipDescription {
+  margin-bottom: 20px;
+  border-image: linear-gradient(
+      90deg,
+      rgba(139, 0, 0, 0),
+      rgba(139, 0, 0, 1),
+      rgba(139, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hellMembershipDescription > p:first-child {
+  margin-bottom: 10px;
+}
+
+.hellMembershipFeatureName {
+  margin-bottom: 10px;
+}
+
+.hellMembershipFeatureDescription {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 8px;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  .hellMemberships {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hellMembership {
+    flex-basis: 33%;
+    max-width: 400px;
+    margin-right: 20px;
+  }
+
+  .hellMembership:last-child {
+    margin-right: 0px;
+  }
+
+  .hellMembershipDescription {
+    height: 130px;
+  }
 }
