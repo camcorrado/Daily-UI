@@ -37,6 +37,7 @@ export default class Day13 extends Component {
       }
     }
     if (filteredConvos.length <= 3) {
+      this.setState({ responding: true });
       setTimeout(() => {
         this.roboResponse(filteredConvos);
       }, 1000);
@@ -58,7 +59,7 @@ export default class Day13 extends Component {
   };
 
   render() {
-    const { convo, disabled } = this.state;
+    const { convo, disabled, responding } = this.state;
     return (
       <section className="directMessaging">
         <div className="assignment">
@@ -72,6 +73,16 @@ export default class Day13 extends Component {
                 {con.message}
               </p>
             ))}
+            {responding ? (
+              <div className="textResponding">
+                <div className="yellow"></div>
+                <div className="red"></div>
+                <div className="blue"></div>
+                <div className="violet"></div>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
           <form onSubmit={this.handleSubmit}>
             <div className="messageInput">

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v8/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMxpazyD.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff)
+    format("woff2");
+}
+
+.pricing {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hellMenu {
+  font-family: "Raleway";
+  max-width: 1000px;
+  margin: 10px 50px 20px 50px;
+  padding: 20px;
+  border: 1px solid darkred;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hellMenuTitle,
+.hellMenuSlogan {
+  margin-bottom: 20px;
+}
+
+.hellMenuSlogan > h2 {
+  font-size: 22px;
+}
+
+.hellMenuItems {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hellMenuItem {
+  border-image: linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0),
+      rgba(0, 0, 0, 1),
+      rgba(255, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+
+.hellMenuItemName {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.hellMenuItemDescription,
+.hellMenuItemPrice {
+  padding-bottom: 5px;
+}
+
+.soul {
+  color: darkred;
+  margin: 0px 2.5px;
+}

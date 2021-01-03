@@ -2,6 +2,151 @@
   margin: auto;
   width: 300px;
   height: 600px;
-  border: 2px solid cornflowerblue;
+  border: 2px solid black;
+  background-color: black;
   border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.messages {
+  border-radius: 35px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 10px 10px 10px 10px;
+  overflow-y: scroll;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  border-radius: 35px;
+}
+
+.user {
+  margin: 5px;
+  align-self: flex-end;
+  padding: 0px 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  max-width: 80%;
+  text-align: left;
+  font-size: 18px;
+}
+
+.robot {
+  margin: 5px;
+  align-self: flex-start;
+  padding: 0px 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  max-width: 80%;
+  text-align: left;
+  font-size: 18px;
+}
+
+.messageInput {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+textarea#message {
+  width: 90%;
+  min-height: 20px;
+  max-height: 50px;
+  margin: auto;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  resize: none;
+  padding: 0px 5px;
+  font-size: 18px;
+}
+
+.messenger > form > .buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+.messenger > form > .buttons > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+}
+
+:root {
+  --yellow: #feb60a;
+  --red: #ff0062;
+  --blue: #00dbf9;
+  --violet: #da00f7;
+}
+
+.textResponding {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.textResponding > div {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 100%;
+  margin: 5px;
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: bounce 1.5s 0.5s linear infinite;
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.red {
+  background-color: var(--red);
+  animation-delay: 0.1s;
+}
+
+.blue {
+  background-color: var(--blue);
+  animation-delay: 0.2s;
+}
+
+.violet {
+  background-color: var(--violet);
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% {
+    filter: blur(3px);
+    transform: scale(1.4);
+  }
 }
