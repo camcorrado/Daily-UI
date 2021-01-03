@@ -30,8 +30,8 @@ import Day27 from "./Components/Day27/Day27";
 import Day28 from "./Components/Day28/Day28";
 import Day29 from "./Components/Day29/Day29";
 import Day30 from "./Components/Day30/Day30";
-// import "./Fonts/Raleway-VariableFont_wght.ttf";
-// import "./Fonts/CinzelDecorative-Regular.ttf";
+import "./Fonts/Raleway-VariableFont_wght.ttf";
+import "./Fonts/Cinzel-VariableFont_wght.ttf";
 
 class App extends Component {
   render() {

@@ -16,7 +16,7 @@ export default class Day30 extends Component {
             <h1>Welcome to Hell</h1>
           </div>
           <div className="hellMenuSlogan">
-            <p>You'll have a damn good time!*</p>
+            <h2>You'll have a damn good time!*</h2>
           </div>
           <div className="hellMemberships">
             <div className="hellMembership">
@@ -56,9 +56,9 @@ export default class Day30 extends Component {
                   <div className="hellMembershipFeatureDescription">
                     <p>
                       Compete in a paragliding race through turbulent winds,
-                      dodging the lustful damned. The winner gets a coupon for
-                      their next visit to Hell! Maybe the coupon will help you
-                      afford a better membership...
+                      dodging the lustful damned. The winner gets a discount
+                      towards their next membership renewal! Maybe a discount
+                      will help you afford a better membership...
                     </p>
                   </div>
                 </div>
@@ -75,6 +75,9 @@ export default class Day30 extends Component {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="hellMembershipButton">
+                <button>Select Membership</button>
               </div>
             </div>
             <div className="hellMembership">
@@ -137,6 +140,9 @@ export default class Day30 extends Component {
                   </div>
                 </div>
               </div>
+              <div className="hellMembershipButton">
+                <button>Select Membership</button>
+              </div>
             </div>
             <div className="hellMembership">
               <div className="hellMembershipTitle">
@@ -181,16 +187,16 @@ export default class Day30 extends Component {
                   </div>
                   <div className="hellMembershipFeatureDescription">
                     <p>
-                      Visit Hell's most popular attraction! Your spa treatment
-                      will begin with a whipping by Hell's cruelest demons. Once
-                      your body is covered in welts, you'll be inserted head
-                      first into a hole in a rock where the exfoliating flames
-                      of Hell will be lit at your feet. Once your feet are
-                      singed, your head will be snapped backwards as you're
-                      dunked in boiling pitch. Monstrous reptiles will haul you
-                      out of the pitch for your final treatment: being hacked in
-                      half by a sword wielding demon! Each guest leaves with a
-                      personalized leaden robe and random affliction!
+                      Your spa treatment will begin with a whipping by Hell's
+                      cruelest demons. Once your body is covered in welts,
+                      you'll be inserted head first into a hole in a rock where
+                      the exfoliating flames of Hell will be lit at your feet.
+                      Once your feet are singed, your head will be snapped
+                      backwards as you're dunked in boiling pitch. Monstrous
+                      reptiles will haul you out of the pitch for your final
+                      treatment: being hacked into bits by a sword wielding
+                      demon! Each guest leaves with a personalized leaden robe
+                      and random affliction!
                     </p>
                   </div>
                 </div>
@@ -207,10 +213,16 @@ export default class Day30 extends Component {
                   </div>
                 </div>
               </div>
+              <div className="hellMembershipButton">
+                <button>Select Membership</button>
+              </div>
             </div>
           </div>
           <footer>
-            <p>*unless you're a child. For questions, contact Minos.</p>
+            <p>
+              *unless you're a child, because they're not permitted. For
+              questions, contact Minos.
+            </p>
           </footer>
         </div>
       </section>
